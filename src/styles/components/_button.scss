@@ -1,0 +1,23 @@
+.button {
+    background-color: white;
+    border: none;
+    color: $highlight-color;
+    cursor: pointer;
+    font-family: $font;
+    font-weight: bold;
+    margin: 0 .26rem;
+    padding: .8rem $s-size;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &:hover, &:focus {
+        &:not(:disabled) {
+            color: white;
+            background-color: $highlight-color;
+        }
+    }
+
+    &:disabled {
+        cursor: default;
+        color: $secondary-bg-color;
+    }
+}

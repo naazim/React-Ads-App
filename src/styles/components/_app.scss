@@ -1,0 +1,26 @@
+.container {
+  padding: 2.2rem 3.8rem 0;
+}
+
+.footer {
+  background-color: $secondary-bg-color;
+  padding: 4.2rem;
+}
+
+.logo {
+  animation: logo-rotate infinite 40s linear;
+  height: 92px;
+  margin-left: -0.8rem;
+}
+
+@keyframes logo-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Tablets */
+@media (min-width: $tablet-breakpoint) {
+  .container {
+    padding: 2.2rem 6rem;
+  }
+}
